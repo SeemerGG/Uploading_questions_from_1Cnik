@@ -351,9 +351,11 @@ def main():
     unload_path = Path(argums.data)
 
     if argums.css is None:
-        anki_creator = AnkiDeckCreator(data, unload_path)
+                anki_creator = AnkiDeckCreator(data, unload_path)
     else:
-        anki_creator = AnkiDeckCreator(data, unload_path, argums.css)
+        with open(argums.css, "r", encoding="utf-8") as css_file:
+            css_content = css_file.read()
+        anki_creator = AnkiDeckCreator(data, unload_path, css_content)
 
     anki_creator.get_package(argums.result) 
 
