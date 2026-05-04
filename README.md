@@ -39,6 +39,8 @@ python anki_deck_generator.py -f questions.json -d /path/to/data/ -r result.apkg
 python anki_deck_generator.py -f questions.json -d /path/to/data/ -r styled_result.apkg -c styles.css
 ```
 
+***Пример колоды Бухгалтерия3Anki.apkg***
+
 ## Инструкция по применению
 
 ### 1. Подготовка приложения "1С:НИК"
